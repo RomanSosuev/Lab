@@ -17,16 +17,23 @@ st=[0]*n
 
 k=0
 
+#Записываем двумерный массив в виде строки
+
 for i in range(10):
     for j in range(6):
         st[k]= arr[i][j]
         k=k+1
+        
+#Сортировка "пузырьком"
 
+        
 for i in range(n-1):
     for j in range(n-i-1):
         if st[j] > st[j+1]:
             st[j], st[j+1] = st[j+1], st[j]
 k=0
+
+#Записываем отсортированную строку обратно в виде двумерного массивва и выводим
 
 for i in range(10):
     for j in range(6):
